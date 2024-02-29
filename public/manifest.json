@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ShareBite",
+    "short_name": "ShareBite",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "A readable Hacker News app.",
+    "icons": [
+        {
+            "src": "icons/144x144.png",
+            "sizes": "240x240",
+            "type": "image/png"
+        }
+    ]
+}
