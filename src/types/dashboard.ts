@@ -1,11 +1,13 @@
 export type Order = {
+  id: number;
   itemId: number;
   quantity: number;
 };
 
 export type Participant = {
+  id: number;
   name: string;
-  order: Order[];
+  orders: Order[];
 };
 
 export type Item = {
@@ -22,4 +24,5 @@ export type Bill = {
   date: Date;
   items: Item[];
   participants: Participant[];
+  isHost: boolean,
 };

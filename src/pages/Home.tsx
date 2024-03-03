@@ -16,7 +16,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen space-y-3 overflow-hidden">
+    <div className="flex flex-col items-center justify-center h-screen space-y-3 overflow-hidden">
       <h1 className="mb-5 text-5xl font-bold text-white">ShareBite</h1>
       <Button
         className="w-6/12"

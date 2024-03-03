@@ -8,8 +8,8 @@ import LoadingOverlayWrapper from "react-loading-overlay-ts";
 import { Spinner } from "flowbite-react";
 import { LoadingAtom } from "./states/loading";
 
-import "./assets/styles.css";
 import "react-responsive-modal/styles.css";
+import "./assets/styles.css";
 import { useAtomValue } from "jotai";
 
 const router = createBrowserRouter([

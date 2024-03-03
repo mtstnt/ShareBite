@@ -9,10 +9,9 @@ import {
 } from "flowbite-react";
 import { useSetAtom } from "jotai";
 import { SubmitHandler, useFieldArray, useForm } from "react-hook-form";
-import toast from "react-hot-toast";
-import { BiArrowBack } from "react-icons/bi";
 import { FaTrash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import { LoadingAtom } from "../states/loading";
 
 type Nullable<T> = T | null;
@@ -56,10 +55,7 @@ export default function Create() {
 
   return (
       <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
-        <div className="flex items-center mb-5">
-          <BiArrowBack cursor="pointer" onClick={() => navigate(-1)} />
-          <h1 className="text-3xl font-bold">🍕 Create a Bite!</h1>
-        </div>
+        <Navbar title="🍕 Create a Bite!" onBack={() => navigate(-1)} />
 
         <div className="mb-3">
           <Label className="block mb-2 font-bold" htmlFor="title">
